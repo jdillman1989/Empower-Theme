@@ -1,0 +1,243 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}/* HTML5 display-role reset for older browsers */article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,ul {
+  list-style: none;
+}
+
+blockquote,q {
+  quotes: none;
+}
+
+blockquote:before,blockquote:after,q:before,q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.transition,.more-link {
+  transition: all ease .25s;
+}
+
+h1,h2,h3,h4,h5,h6,p,a,span,small,ul,li,ol,footer,aside,section {
+  font-family: "proxima-nova", sans-serif;
+}
+
+.standard-paragraph {
+  line-height: 1.5rem;
+  color: #777777;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.standard-large-heading,.standard-heading {
+  font-size: 30px;
+  font-weight: 700;
+  color: #00275d;
+  line-height: 1.25em;
+}
+
+.standard-heading {
+  font-size: 24px;
+}
+
+.standard-subhead {
+  color: #4c70a0;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: "ff-tisa-web-pro", serif;
+}
+
+.standard-list {
+  list-style: disc;
+  color: #848483;
+  line-height: 1.5;
+  margin-left: 1rem;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.time-stamp {
+  color: #848483;
+  margin-bottom: 1rem;
+  display: block;
+  text-transform: uppercase;
+}
+
+.quotation-text {
+  font-family: "ff-tisa-web-pro", serif;
+  font-style: italic;
+  font-size: 20px;
+  color: #2c323a;
+  line-height: 1.5rem;
+}
+
+.quotation-attribution {
+  font-size: 14px;
+  font-weight: 700;
+  color: #00275d;
+  text-transform: uppercase;
+}
+
+.accordion-heading {
+  font-size: 30px;
+  font-family: "ff-tisa-web-pro", serif;
+  color: #848483;
+}
+
+.hero-large-heading,.cta-large-heading {
+  font-size: 3.75rem;
+  font-weight: 700;
+  padding: 0 6rem;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-paragraph,.cta-paragraph {
+  font-size: 28px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.cta-paragraph {
+  font-size: 22px;
+  font-weight: 100;
+}
+
+.standard-link {
+  color: #00275d;
+  text-decoration: none;
+}
+
+.global-header-link {
+  font-size: 22px;
+  color: #848483;
+  text-decoration: none;
+}
+
+.global-header-link:hover {
+  color: #00275d;
+}
+
+.more-link {
+  display: inline-block;
+  color: #248232;
+  font-family: "ff-tisa-web-pro", serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  margin-top: 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.more-link:hover {
+  color: #2faa41;
+}
+
+.grid-item-intro-heading {
+  text-align: center;
+  font-weight: 300;
+  font-family: "ff-tisa-web-pro", serif;
+  font-size: 3rem;
+  color: #248232;
+  display: block;
+  margin-bottom: 1rem;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+.grid-item-intro-heading:before,.grid-item-intro-heading:after {
+  width: 12rem;
+  height: 1px;
+  background-color: #c1c1c1;
+  content: "";
+  display: inline-block;
+  margin: .75rem 0 .5rem;
+}/* No files to import found in components//* *//* No files to import found in objects//* */header.global nav li a[href*="twitter.com"] {
+  background-image: url(../img/twitter.jpg);
+}
+
+header.global nav li a[href*="facebook.com"] {
+  background-image: url(../img/facebook.jpg);
+}
+
+header.global nav li a[href*="instagram.com"] {
+  background-image: url(../img/instagram.jpg);
+}
+
+header.global nav li a[href*="youtube.com"] {
+  background-image: url(../img/youtube.jpg);
+}
+
+.products .content .tabs .tab .tab-content-hidden {
+  display: none;
+}
+
+.products .content .tab-content-display {
+  border: 1px solid black;
+  padding: 15px;
+  margin: 15px;
+  display: block;
+}
+
+@media only screen and (max-width: 1100px) {
+  .hero-large-heading,.cta-large-heading {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero-large-heading,.cta-large-heading {
+    font-size: 2.625rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .accordion-heading {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media only screen and (max-width: 715px) {
+  .hero-large-heading,.cta-large-heading {
+    font-size: 2rem;
+    padding: 0 2rem;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .hero-large-heading,.cta-large-heading {
+    font-size: 1.75rem;
+  }
+}

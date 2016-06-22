@@ -1,0 +1,58 @@
+header.global{
+
+	nav{
+
+		li{
+			
+			a{
+				
+				&[href*="twitter.com"]{
+					background-image: url(../img/twitter.jpg); 
+				}
+				
+				&[href*="facebook.com"]{
+					background-image: url(../img/facebook.jpg);
+				}
+
+				&[href*="instagram.com"]{
+					background-image: url(../img/instagram.jpg);
+				}
+
+				&[href*="youtube.com"]{
+					background-image: url(../img/youtube.jpg);
+				}
+			}
+		}
+	}
+}
+
+.products{
+	
+	header{
+		
+	}
+
+	.content{
+		
+		.tabs{
+			
+			.tab{
+
+				&.active{
+					
+				}
+				
+				.tab-content-hidden{
+					display: none;
+				}
+			}
+		}
+
+		.tab-content-display{
+			border: 1px solid black;
+			padding: 15px;
+			margin: 15px;
+			display: block;  
+		}
+	}
+}

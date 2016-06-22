@@ -1,0 +1,193 @@
+// Setting up variables for default font familys.
+
+$sans: "proxima-nova", sans-serif;
+
+$serif: "ff-tisa-web-pro",serif;
+
+$condensed: "proxima-nova-condensed",sans-serif;
+
+// Setting Default typeface for all elements
+h1, h2, h3, h4, h5, h6, p, a, span, small, ul, li, ol, footer, aside, section{
+  font-family: $sans;
+}
+
+// Defining different type treatments to be extended on to differing elements at a later point.
+// The classes are not intended to be used within the makrup themselves
+
+.standard-paragraph{
+  line-height: 1.5rem;
+  color: $grey-medium;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.standard-large-heading{
+  font-size: 30px;
+  font-weight: 700;
+  color: $blue;
+  line-height: 1.25em;
+}
+
+.standard-heading{
+  @extend .standard-large-heading;
+  font-size: 24px;
+}
+
+.standard-subhead{
+  color: $blue-light;
+  font-size: 20px;
+  line-height: 1.5;
+  font-family: $serif;
+}
+
+.standard-list{
+  list-style: disc;
+  color: $grey;
+  line-height: 1.5;
+  margin-left: 1rem;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.time-stamp{
+  color: $grey;
+  margin-bottom: 1rem;
+  display: block;
+  text-transform: uppercase;
+}
+
+
+// Quotation Styling
+
+.quotation-text{
+  font-family: $serif;
+  font-style: italic;
+  font-size: 20px;
+  color: $sky-dark;
+  line-height: 1.5rem;
+}
+
+.quotation-attribution{
+  font-size: 14px;
+  font-weight: 700;
+  color: $blue;
+  text-transform: uppercase;
+}
+
+
+// Accordion Styling
+
+.accordion-heading{
+  font-size: 30px;
+  font-family: $serif;
+  color: $grey;
+  @include breakpoint(800px) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+// Hero Styling
+
+.hero-large-heading{
+      font-size: 3.75rem;
+      font-weight: 700;
+      padding: 0 6rem;
+      position: relative;
+      z-index: 1;
+      @extend .hero-large-heading;
+      @include breakpoint(1100px) {
+        font-size: 3.5rem;
+      }
+      @include breakpoint(1000px) {
+        font-size: 2.625rem;
+      }
+      @include breakpoint(715px) {
+        font-size: 2rem;
+        padding: 0 2rem;
+      }
+      @include breakpoint(465px) {
+        font-size: 1.75rem;
+        }
+
+    }
+//   font-size: 60px;
+//   font-weight: 700;
+// }
+
+.hero-paragraph{
+  font-size: 28px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+
+
+
+// CTA Styling
+
+.cta-large-heading{
+  @extend .hero-large-heading;
+}
+
+.cta-paragraph{
+  @extend .hero-paragraph;
+  font-size: 22px;
+  font-weight: 100;
+}
+// Link Styling
+
+.standard-link{
+  color: $blue;
+  text-decoration: none;
+}
+
+
+.global-header-link{
+  font-size: 22px;
+  color: $grey;
+  text-decoration: none;
+  &:hover{
+    color: $blue;
+  }
+}
+
+.more-link{
+  display: inline-block;
+  color: $green;
+  font-family: $serif;
+  font-size: 14px;
+  line-height: 1.5em;
+  margin-top: 1rem;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  @extend .transition;
+  &:hover{
+    color: $green-light;
+  }
+}
+
+// Misc
+
+.grid-item-intro-heading{
+  text-align: center;
+  font-weight: 300;
+  font-family: $serif;
+  font-size: 3rem;
+  color: $green;
+  display: block;
+  margin-bottom: 1rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  &:before, &:after{
+    width: 12rem;
+    height: 1px;
+    background-color: $grey-light;
+    content: "";
+    display: inline-block;
+    margin: .75rem 0 .5rem;
+  }
+}

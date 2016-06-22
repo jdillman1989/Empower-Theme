@@ -1,0 +1,1 @@
+var $=jQuery.noConflict();$(document).ready(function(){function t(t){a.html(t)}var n=$(".tab"),a=$("#product-display");n.on("click",function(n){n.preventDefault();var a=$(this);a.addClass("active");var c=a.find(".tab-content-hidden"),i=c.html();t(i)}),n.click()});
