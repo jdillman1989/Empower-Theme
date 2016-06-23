@@ -38,11 +38,12 @@ h4{
 	color: black;
 }
 
-p{
+p, input, textarea{
 	font-size: ($fontsizeS) + px;
 	font-family: $serif; 
 	font-weight: 400;
 	color: black;
+	line-height: 1.2; 
 }
 
 a{

@@ -196,3 +196,114 @@ header.global{
 		}
 	}
 }
+
+.about{
+	padding: 30px; 
+	width: 100%; 
+
+	header{
+		width: 100%;
+		text-align: center;
+		
+		h1{
+			margin-bottom: 30px; 
+		}
+	}
+
+	.content{
+		width: 100%; 
+		
+		p, h4, h3, h2{
+			margin-bottom: 15px; 
+		}
+	}
+}
+
+.contact{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%; 
+	padding: 30px; 
+	background-color: lighten($gray, 31%);
+	 
+	.contact-info{
+		width: 50%;
+		padding: 20px; 
+		border-right: 1px solid $gray;
+		
+		@include breakpoint(700px) {
+			width: 100%;
+			padding: 20px; 
+			border-right: none;
+			margin-bottom: 20px; 
+		}
+		
+		h2{
+			margin-bottom: 15px; 
+		}
+	}
+
+	.contact-form{
+		width: 50%;
+		padding: 20px;
+		
+		@include breakpoint(700px) {
+			width: 100%;
+		}
+	}
+}
+
+.gform_fields{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 100%;
+	
+	.gfield{
+		width: 48%;
+		margin-bottom: 15px;
+		padding: 0;
+		
+		@include breakpoint(600px) {
+			width: 100%;
+		} 
+		
+		.gfield_label{
+			display: none;
+		}
+
+		input, textarea{
+			width: 100%;
+			margin: 0;
+			padding: 10px;
+			border: 1px solid black;    
+		}
+
+		&:last-of-type{
+			width: 100%; 
+		}
+	}
+}
+
+.gform_footer{
+	width: 100%;
+	
+	input{
+		width: 100%;
+		margin: 0;
+		padding: 15px;
+		background-color: $green;
+		color: white;
+		border: none; 
+		
+		&:hover{
+			background-color: lighten($green, 15%);
+			cursor: pointer;
+		}    
+	} 
+}
+
+footer{
+	padding: 15px;
+	text-align: center; 
+}

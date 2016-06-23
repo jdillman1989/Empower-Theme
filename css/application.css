@@ -68,11 +68,12 @@ h4 {
   color: black;
 }
 
-p {
+p,input,textarea {
   font-size: 16px;
   font-family: "Georgia", serif;
   font-weight: 400;
   color: black;
+  line-height: 1.2;
 }
 
 a {
@@ -290,6 +291,112 @@ header.global nav ul li a[href*="youtube.com"] {
   margin-bottom: 10px;
 }
 
+.about {
+  padding: 30px;
+  width: 100%;
+}
+
+.about header {
+  width: 100%;
+  text-align: center;
+}
+
+.about header h1 {
+  margin-bottom: 30px;
+}
+
+.about .content {
+  width: 100%;
+}
+
+.about .content p,.about .content h4,.about .content h3,.about .content h2 {
+  margin-bottom: 15px;
+}
+
+.contact {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 30px;
+  background-color: #f0f0f0;
+}
+
+.contact .contact-info {
+  width: 50%;
+  padding: 20px;
+  border-right: 1px solid #a1a1a1;
+}
+
+.contact .contact-info h2 {
+  margin-bottom: 15px;
+}
+
+.contact .contact-form {
+  width: 50%;
+  padding: 20px;
+}
+
+.gform_fields {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.gform_fields .gfield {
+  width: 48%;
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.gform_fields .gfield .gfield_label {
+  display: none;
+}
+
+.gform_fields .gfield input,.gform_fields .gfield textarea {
+  width: 100%;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+.gform_fields .gfield:last-of-type {
+  width: 100%;
+}
+
+.gform_footer {
+  width: 100%;
+}
+
+.gform_footer input {
+  width: 100%;
+  margin: 0;
+  padding: 15px;
+  background-color: #26846a;
+  color: white;
+  border: none;
+}
+
+.gform_footer input:hover {
+  background-color: #37bf9a;
+  cursor: pointer;
+}
+
+footer {
+  padding: 15px;
+  text-align: center;
+}
+
 @media only screen and (max-width: 700px) {
   header.global .branding .logo {
     width: 55px;
@@ -300,6 +407,23 @@ header.global nav ul li a[href*="youtube.com"] {
   }
 
   .products .content .tab-content-display .products-container .product-item {
+    width: 100%;
+  }
+
+  .contact .contact-info {
+    width: 100%;
+    padding: 20px;
+    border-right: none;
+    margin-bottom: 20px;
+  }
+
+  .contact .contact-form {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .gform_fields .gfield {
     width: 100%;
   }
 }

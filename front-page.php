@@ -123,7 +123,7 @@
 
 	<section class="about">
 		<header>
-			<h2><?php the_field('about_title'); ?></h2>
+			<h1><?php the_field('about_title'); ?></h1>
 		</header>
 		<div class="content">
 			<?php the_field('about_description'); ?>
