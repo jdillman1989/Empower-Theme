@@ -18,7 +18,7 @@
 			$video_key = substr($video_url, $video_key_start + 3);
 			
 			echo '<div class="promo-video">';
-			echo '<iframe src="https://www.youtube.com/embed/'.$video_key.'" frameborder="0" allowfullscreen></iframe>';
+			echo '<iframe src="https://www.youtube.com/embed/'.$video_key.'" id="promo-video" frameborder="0" allowfullscreen></iframe>';
 			echo '</div>';
 		}
 		else {
@@ -30,7 +30,7 @@
 
 	<section class="products">
 		<header>
-			<h2><?php the_field('product_title'); ?></h2>
+			<h1><?php the_field('product_title'); ?></h1>
 		</header>
 		<div class="content">
 
@@ -44,13 +44,16 @@
 			'parent' => 0
 		) );
 
-		if (count( $terms ) > 0) {
+		$parent_amount = count( $terms );
+		$widths = 100 / $parent_amount;
+
+		if ($parent_amount > 0) {
 
 			echo '<div class="tabs">';
 
 			foreach( $terms as $term ){
 
-				echo '<div class="tab">';
+				echo '<div class="tab" style="width:'.$widths.'%;">';
 				echo '<h2>'.$term->name.'</h2>';
 
 				$termchildren = get_term_children( $term->term_id, 'product_categories' );
@@ -91,9 +94,7 @@
 								$description = get_field('product_description');
 
 								echo '<a class="product-item" href="'.$link.'">';
-								echo '<div class="product-item-image">';
-								echo '<img src="'.$image['url'].'" alt="'.$image['alt'].'">';
-								echo '</div>';
+								echo '<img src="'.$image['url'].'" alt="'.$image['alt'].'" class="product-item-image">';
 								echo '<div class="product-item-text">';
 								echo '<h4>'.$title.'</h4>';
 								echo $description;

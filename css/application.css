@@ -1,4 +1,6 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+@import url(http://fonts.googleapis.com/css?family=Pathway+Gothic+One);
+
+@import url(http://fonts.googleapis.com/css?family=Cabin:400,700);/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
@@ -34,169 +36,199 @@ table {
   border-spacing: 0;
 }
 
-.transition,.more-link {
+.transition {
   transition: all ease .25s;
 }
 
-h1,h2,h3,h4,h5,h6,p,a,span,small,ul,li,ol,footer,aside,section {
-  font-family: "proxima-nova", sans-serif;
-}
-
-.standard-paragraph {
-  line-height: 1.5rem;
-  color: #777777;
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.standard-large-heading,.standard-heading {
-  font-size: 30px;
+h1 {
+  font-size: 56px;
+  font-family: "Cabin", sans-serif;
   font-weight: 700;
-  color: #00275d;
-  line-height: 1.25em;
+  color: black;
 }
 
-.standard-heading {
+h2 {
+  font-size: 30px;
+  font-family: "Pathway Gothic One", sans-serif;
+  font-weight: normal;
+  color: black;
+}
+
+h3 {
   font-size: 24px;
-}
-
-.standard-subhead {
-  color: #4c70a0;
-  font-size: 20px;
-  line-height: 1.5;
-  font-family: "ff-tisa-web-pro", serif;
-}
-
-.standard-list {
-  list-style: disc;
-  color: #848483;
-  line-height: 1.5;
-  margin-left: 1rem;
-  font-size: 18px;
-  font-weight: 300;
-}
-
-.time-stamp {
-  color: #848483;
-  margin-bottom: 1rem;
-  display: block;
-  text-transform: uppercase;
-}
-
-.quotation-text {
-  font-family: "ff-tisa-web-pro", serif;
-  font-style: italic;
-  font-size: 20px;
-  color: #2c323a;
-  line-height: 1.5rem;
-}
-
-.quotation-attribution {
-  font-size: 14px;
+  font-family: "Cabin", sans-serif;
   font-weight: 700;
-  color: #00275d;
-  text-transform: uppercase;
+  color: black;
 }
 
-.accordion-heading {
-  font-size: 30px;
-  font-family: "ff-tisa-web-pro", serif;
-  color: #848483;
+h4 {
+  font-size: 24px;
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  color: black;
 }
 
-.hero-large-heading,.cta-large-heading {
-  font-size: 3.75rem;
-  font-weight: 700;
-  padding: 0 6rem;
-  position: relative;
-  z-index: 1;
+p {
+  font-size: 16px;
+  font-family: "Georgia", serif;
+  font-weight: 400;
+  color: black;
 }
 
-.hero-paragraph,.cta-paragraph {
-  font-size: 28px;
-  line-height: 1.5;
-  font-weight: 300;
+a {
+  text-decoration: underline;
+  color: #26846a;
 }
 
-.cta-paragraph {
-  font-size: 22px;
-  font-weight: 100;
-}
-
-.standard-link {
-  color: #00275d;
+a:hover {
   text-decoration: none;
 }
 
-.global-header-link {
-  font-size: 22px;
-  color: #848483;
-  text-decoration: none;
+strong {
+  font-weight: bold;
+}/* No files to import found in components//* *//* No files to import found in objects//* */* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.global-header-link:hover {
-  color: #00275d;
-}
-
-.more-link {
-  display: inline-block;
-  color: #248232;
-  font-family: "ff-tisa-web-pro", serif;
-  font-size: 14px;
-  line-height: 1.5em;
-  margin-top: 1rem;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-}
-
-.more-link:hover {
-  color: #2faa41;
-}
-
-.grid-item-intro-heading {
-  text-align: center;
-  font-weight: 300;
-  font-family: "ff-tisa-web-pro", serif;
-  font-size: 3rem;
-  color: #248232;
-  display: block;
-  margin-bottom: 1rem;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+header.global {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
+  padding: 20px;
+  background-color: #141414;
 }
 
-.grid-item-intro-heading:before,.grid-item-intro-heading:after {
-  width: 12rem;
-  height: 1px;
-  background-color: #c1c1c1;
-  content: "";
+header.global .branding {
+  width: 75%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+header.global .branding .logo {
   display: inline-block;
-  margin: .75rem 0 .5rem;
-}/* No files to import found in components//* *//* No files to import found in objects//* */header.global nav li a[href*="twitter.com"] {
+  height: auto;
+  width: 75px;
+  margin-right: 20px;
+}
+
+header.global .branding h1 {
+  display: inline-block;
+  color: white;
+}
+
+header.global nav {
+  width: 25%;
+}
+
+header.global nav ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+
+header.global nav ul li {
+  margin: 0 10px;
+}
+
+header.global nav ul li a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-indent: -9999px;
+  background-size: cover;
+}
+
+header.global nav ul li a[href*="twitter.com"] {
   background-image: url(../img/twitter.jpg);
 }
 
-header.global nav li a[href*="facebook.com"] {
+header.global nav ul li a[href*="facebook.com"] {
   background-image: url(../img/facebook.jpg);
 }
 
-header.global nav li a[href*="instagram.com"] {
+header.global nav ul li a[href*="instagram.com"] {
   background-image: url(../img/instagram.jpg);
 }
 
-header.global nav li a[href*="youtube.com"] {
+header.global nav ul li a[href*="youtube.com"] {
   background-image: url(../img/youtube.jpg);
+}
+
+.promo {
+  width: 85%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.promo .promo-video {
+  height: 40vw;
+  width: 100%;
+}
+
+.promo .promo-video iframe {
+  height: 100%;
+}
+
+.promo .promo-image {
+  width: 100%;
+  height: 40vw;
+}
+
+.products header {
+  width: 100%;
+  text-align: center;
+}
+
+.products header h1 {
+  margin-bottom: 30px;
+}
+
+.products .content {
+  width: 100%;
+}
+
+.products .content .tabs {
+  width: 100%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.products .content .tabs .tab {
+  padding: 15px;
+  background-color: #cccccc;
+  text-align: center;
+  cursor: pointer;
+}
+
+.products .content .tabs .tab:hover {
+  text-decoration: underline;
+}
+
+.products .content .tabs .tab:nth-child(odd) {
+  background-color: silver;
+}
+
+.products .content .tabs .tab.active {
+  background-color: #f0f0f0;
 }
 
 .products .content .tabs .tab .tab-content-hidden {
@@ -204,40 +236,70 @@ header.global nav li a[href*="youtube.com"] {
 }
 
 .products .content .tab-content-display {
-  border: 1px solid black;
-  padding: 15px;
-  margin: 15px;
+  width: 100%;
+  padding: 30px;
   display: block;
+  background-color: #f0f0f0;
 }
 
-@media only screen and (max-width: 1100px) {
-  .hero-large-heading,.cta-large-heading {
-    font-size: 3.5rem;
+.products .content .tab-content-display h3 {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.products .content .tab-content-display .products-container {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.products .content .tab-content-display .products-container .product-item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+  text-decoration: none;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+
+.products .content .tab-content-display .products-container .product-item:hover {
+  background-color: silver;
+}
+
+.products .content .tab-content-display .products-container .product-item .product-item-image {
+  display: block;
+  width: 30%;
+  height: auto;
+}
+
+.products .content .tab-content-display .products-container .product-item .product-item-text {
+  display: block;
+  width: 70%;
+  padding: 0 15px;
+}
+
+.products .content .tab-content-display .products-container .product-item .product-item-text h4 {
+  margin-bottom: 15px;
+}
+
+.products .content .tab-content-display .products-container .product-item .product-item-text p {
+  margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 700px) {
+  header.global .branding .logo {
+    width: 55px;
   }
-}
 
-@media only screen and (max-width: 1000px) {
-  .hero-large-heading,.cta-large-heading {
-    font-size: 2.625rem;
+  header.global .branding h1 {
+    font-size: 30px;
   }
-}
 
-@media only screen and (max-width: 800px) {
-  .accordion-heading {
-    font-size: 20px;
-    line-height: 20px;
-  }
-}
-
-@media only screen and (max-width: 715px) {
-  .hero-large-heading,.cta-large-heading {
-    font-size: 2rem;
-    padding: 0 2rem;
-  }
-}
-
-@media only screen and (max-width: 465px) {
-  .hero-large-heading,.cta-large-heading {
-    font-size: 1.75rem;
+  .products .content .tab-content-display .products-container .product-item {
+    width: 100%;
   }
 }

@@ -8,7 +8,13 @@ $(document).ready(function(){
 	tabs.on('click', function(e) {
 		e.preventDefault();
 		var tab = $(this);
+
+		tabs.each(function() {
+			$(this).removeClass('active');
+		});
+
 		tab.addClass('active');
+	
 		var productData = tab.find( ".tab-content-hidden" );
 		var productDisplayData = productData.html();
 		productsDisplay(productDisplayData);
@@ -19,4 +25,14 @@ $(document).ready(function(){
 	};
 
 	tabs.click();
+
+	// Video iFrame responsive
+	var promoVideo = jQuery("#promo-video");
+
+	promoVideo.attr( "width", ($('.promo-video').width()) );
+
+	jQuery(window).resize(function(){
+
+		promoVideo.attr( "width", ($('.promo-video').width()) );
+	});
 });
